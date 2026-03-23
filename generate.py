@@ -86,7 +86,7 @@ print("test:",len(test_dataset))
 print('data ready.')
 
 #### load model
-if args.rting:
+if args.rating:
     params_filename='40steps100_0.pth'                                                  #40steps100_0.pth
     model_path = args.save_path+ 'data/' +params_filename
     args.sampling_noise = True
