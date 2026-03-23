@@ -55,7 +55,7 @@ parser.add_argument('--noise_min', type=float, default=0.0001, help='noise lower
 parser.add_argument('--noise_max', type=float, default=0.02, help='noise upper bound for noise generating')
 parser.add_argument('--sampling_noise', type=bool, default=False, help='sampling with noise or not')
 parser.add_argument('--sampling_steps', type=int, default=10, help='steps of the forward process during inference')
-
+parser.add_argument('--rating', type=int, default=1, help='generate QoS (1) or invocation (0)')
 args = parser.parse_args()
 
 print("args:", args)
@@ -85,9 +85,8 @@ print("test:",len(test_dataset))
 
 print('data ready.')
 
-rting=1
 #### load model
-if rting:
+if args.rting:
     params_filename='40steps100_0.pth'                                                  #40steps100_0.pth
     model_path = args.save_path+ 'data/' +params_filename
     args.sampling_noise = True
