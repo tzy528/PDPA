@@ -42,7 +42,7 @@ parser.add_argument('--dataset', type=str, default='qos/', help='choose the data
 parser.add_argument('--data_path', type=str, default='../datasets/', help='load data path')
 parser.add_argument('--lr', type=float, default=0.001, help='learning rate')
 parser.add_argument('--weight_decay', type=float, default=0.0)
-parser.add_argument('--batch_size', type=int, default=320)
+parser.add_argument('--batch_size', type=int, default=512)
 parser.add_argument('--epochs', type=int, default=800, help='upper epoch limit')
 parser.add_argument('--topN', type=str, default='[10, 20, 50, 100]')
 parser.add_argument('--tst_w_val', action='store_true', help='test with validation')
