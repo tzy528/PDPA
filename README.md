@@ -1,6 +1,7 @@
 # PDPA
 PDPA is an academic project that aims to explain data poisoning methods based on diffusion models.
-the files in the package models are class files, such as the DNN (MLP), diffusion.
+
+The files in the package models are class files, such as the DNN (MLP), diffusion.
 
 ## if you want to generate fake users
 1. Within pytharm or vscode, run main.py for training, then run generate.py for generating.
